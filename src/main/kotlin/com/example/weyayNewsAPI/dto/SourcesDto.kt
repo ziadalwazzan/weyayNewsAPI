@@ -5,13 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 
 class SourcesDTO {
-    @JsonProperty("status")
     var status: String? = null
 
-    @JsonProperty("totalResults")
     val totalResults: String? = null
 
-    @JsonProperty("articles")
     val sources: Array<Source>? = null
 
 }
