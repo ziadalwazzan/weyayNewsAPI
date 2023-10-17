@@ -1,8 +1,11 @@
 package com.example.weyayNewsAPI.remote
 
-import java.net.http.HttpClient
+import com.example.weyayNewsAPI.dto.SourcesDTO
+import com.example.weyayNewsAPI.dto.TopHeadlinesDTO
 
 
-interface HttpClientInterface {
-    fun getClient(): HttpClient
+interface NewsApiClientInterface {
+    fun requestTopHeadlines(country : String): TopHeadlinesDTO
+    fun requestSources(): SourcesDTO
+    fun requestFileDownload(fileUrl: String): ByteArray
 }

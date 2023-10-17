@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 class SourcesDTO {
     var status: String? = null
 
-    val totalResults: String? = null
+    var totalResults: Int? = null
 
     val sources: Array<Source>? = null
 
