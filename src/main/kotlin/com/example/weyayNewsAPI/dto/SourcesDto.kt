@@ -7,6 +7,6 @@ class SourcesDTO {
 
     var totalResults: Int? = null
 
-    val sources: Array<Source>? = null
+    var sources: Array<Source>? = null
 
 }
